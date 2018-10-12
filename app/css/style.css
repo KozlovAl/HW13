@@ -1,0 +1,326 @@
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.container-test {
+	background: url(../img/Bg1.png);
+	background-size: cover;
+}
+
+.test {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 60px 0 130px 0;
+}
+
+.icon-client {
+	border: 10px solid #59a19a;
+	width: 175px;
+	height: 175px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.client-one {
+	background-image: url(../img/sprite.png);
+	background-position: -318px -303px;
+}
+
+.client-two {
+	background-image: url(../img/sprite.png);
+	background-position: -75px 0px;
+}
+
+.client-three {
+	background-image: url(../img/sprite.png);
+	background-position: 0px -303px;
+}
+
+.client-fhour {
+	background-image: url(../img/sprite.png);
+	background-position: -344px 0px;
+}
+
+.client-five {
+	background-image: url(../img/sprite.png);
+	background-position: -159px -303px;
+}
+
+h1,
+h3,
+h4 {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Gotham Rounded', sans-serif;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: white;
+	margin: 0;
+	padding: 0 0 40px 0;
+}
+
+h3 {
+	font-family: 'Gotham Rounded', sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	color: white;
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+
+h4 {
+	font-family: 'Gotham Rounded', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: white;
+	margin: 0;
+	padding: 0 0 40px 0;
+}
+
+.client {
+	width: 20%;
+}
+
+
+/*contact/////////////////////////*/
+
+.container-contact {
+	position: relative;
+	background: url(../img/bg2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	padding: 60px 0;
+}
+
+.container-contact:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #333333;
+	opacity: .6;
+	
+}
+
+.contact {
+	position: relative;
+	z-index: 2;	
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.submit-holder {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.contact ul {
+	padding: 20px 0 50px 0;
+	text-align: center;
+	margin: 0;
+}
+
+.contact li {
+	width: 10%;
+	padding: 5px;
+}
+
+.fab {
+	font-size: 53px;
+	cursor: pointer;
+}
+
+.fab:hover {
+	color: yellow;
+}
+
+.fa-facebook-square {
+	color: #507cbe;
+}
+
+.fa-twitter-square {
+	color: #63cdf1;
+}
+
+.fa-google-plus-square{
+	color: #e77d71;
+}
+
+.fa-linkedin {
+	color: #90cadd;
+}
+
+.fa-behance-square {
+	color: #1aace3;
+}
+
+.fa-instagram {
+	color: #c7c5b3;
+}
+
+.fa-git-square {
+	color: #d97aa6;
+}
+
+#name,
+#e-mail,
+#masseg {
+	width: 100%;
+	padding: 20px 20px 20px 60px;
+	background: #282828;
+	border: none;
+	border-radius: 10px;
+	color: white;
+}
+
+#name,
+#e-mail {
+	background-repeat: no-repeat;
+	background-position: 20px;
+}
+
+#e-mail {
+	background-image: url(../img/bgname.png);
+}
+
+#name {
+	background-image: url(../img/Bgname-one.png);
+}
+
+input::-webkit-input-placeholder {
+	font-size: 19px;
+	font-family: 'Gotham Rounded', sans-serif;
+	font-weight: 300;
+	color: #8e8e8e;
+}
+
+#masseg {
+	height: 160px;
+	resize: none;
+}
+
+.form-holder {
+	padding: 10px 0;
+}
+
+#submit {
+	width: 40%;
+	text-align: center;
+	padding: 20px 0;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: 'Gotham Rounded', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+
+}
+
+#submit:hover {
+	background: yellow;
+}
+
+
+
+/*///////////// slick custom*/
+.slick-arrow {
+	color: white;
+	font-size: 100px;
+	font-weight: 1;
+	position: absolute;
+	top: 45%;
+	z-index: 1;
+	margin: 0 -15px;
+}
+
+.fa-angle-left {
+	left: 0;
+}
+
+.fa-angle-right {
+	right: 0;
+}
+
+.slick-slide {
+	opacity: 0.3;
+}
+.slick-slide h3,
+.slick-slide h4 {
+	opacity: 0;
+}
+
+.slick-current,
+.slick-current h3,
+.slick-current h4 {
+	opacity: 1;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.slick-arrow {
+				margin: 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+ .slick-arrow {
+				margin: 0;
+	}
+
+	.fa-angle-left {
+	left: 20px;
+}
+
+.fa-angle-right {
+	right: 20px;
+}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+
+.contact li {
+	width: 20%;
+	padding: 5px;
+}
+
+.contact {
+	padding: 0 20px;
+}
+
+	.fa-angle-left {
+	left: 30px;
+}
+
+.fa-angle-right {
+	right: 30px;
+}
+
+}
+
+@media (max-width: 479px) {
+	.contact li {
+	width: 20%;
+	padding: 5px;
+}
+
+.contact {
+	padding: 0 20px;
+}
+
+.slick-arrow {
+	font-size: 25px;
+}
+}
